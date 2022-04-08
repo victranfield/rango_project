@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-{% load static %}
+<!-- {% load static %} -->
+<!-- {% get_media_prefix %} -->
 
 <html>
   <head>
@@ -14,7 +15,9 @@
     </div>
     <div>
       <a href="/rango/">Index</a><br />
-      <img src="{% static "media/cat.jpg" %}" alt="Picture of cat" />
+      <!-- <img src="/media/cat.jpg" alt="Picture of cat" /> -->
+      <img src="{{ MEDIA_URL}}cat.jpg" />
+      <!-- {{ MEDIA_URL}} %} -->
       <!-- New line -->
     </div>
   </body>
